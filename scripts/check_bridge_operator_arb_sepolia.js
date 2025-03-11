@@ -11,7 +11,7 @@ async function main() {
   
   const contract = new ethers.Contract(contractAddress, contractAbi, provider);
   const operator = await contract.bridgeOperator();
-  console.log("✅ Current Bridge Operator (Backend Test): ", contractAddress, operator);
+  console.log("✅ Current Bridge Operator: ", contractAddress, operator);
 }
 
 main().catch(console.error);
